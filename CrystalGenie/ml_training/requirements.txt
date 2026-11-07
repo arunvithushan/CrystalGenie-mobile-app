@@ -1,0 +1,15 @@
+# Crystal Genie ML training — Python 3.10 (also works on 3.11/3.12)
+#
+# Native Windows: TensorFlow >= 2.11 has NO native-Windows GPU support, so this trains on CPU
+# (fine for ~1k images: the shipped model trained in ~14 min on this laptop's CPU).
+# To use the RTX 3050, run the same scripts inside WSL2 Ubuntu with:
+#     pip install "tensorflow[and-cuda]==2.17.1"
+# (see docs/WINDOWS_SETUP.md, section "GPU training with WSL2").
+tensorflow==2.17.1
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+scikit-image==0.24.0
+pillow==11.3.0
+opencv-python-headless==4.10.0.84
+matplotlib==3.9.3

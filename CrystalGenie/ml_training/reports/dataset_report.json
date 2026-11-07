@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-11-04T08:02:27.384474+00:00",
+  "data_dir": "C:\\Users\\ASUS\\Desktop\\arun\\images\\a",
+  "structure": "one sub-folder per class (folder name = label)",
+  "loose_files_in_root_ignored": [],
+  "total_files_scanned": 961,
+  "total_images_readable": 961,
+  "num_classes": 13,
+  "class_names": [
+    "Garnet",
+    "Goldstone",
+    "Hematite",
+    "Herkimer_Diamond",
+    "Lapis_Lazuli",
+    "Libyan_Desert_Glass",
+    "Obsidian",
+    "Red_Beryl",
+    "Red_Jasper",
+    "Rose_Quartz",
+    "Shungite",
+    "Smokey_Quartz",
+    "Tigers_Eye"
+  ],
+  "images_per_class": {
+    "Garnet": 40,
+    "Goldstone": 71,
+    "Hematite": 79,
+    "Herkimer_Diamond": 80,
+    "Lapis_Lazuli": 80,
+    "Libyan_Desert_Glass": 83,
+    "Obsidian": 75,
+    "Red_Beryl": 78,
+    "Red_Jasper": 78,
+    "Rose_Quartz": 85,
+    "Shungite": 78,
+    "Smokey_Quartz": 52,
+    "Tigers_Eye": 82
+  },
+  "imbalance": {
+    "max_class": "Rose_Quartz",
+    "min_class": "Garnet",
+    "max_count": 85,
+    "min_count": 40,
+    "ratio_max_to_min": 2.12
+  },
+  "extensions": {
+    ".jpg": 870,
+    ".png": 90,
+    ".jpeg": 1
+  },
+  "formats": {
+    "JPEG": 846,
+    "PNG": 93,
+    "WEBP": 18,
+    "MPO": 2,
+    "AVIF": 2
+  },
+  "color_modes": {
+    "RGB": 894,
+    "RGBA": 53,
+    "CMYK": 1,
+    "P": 13
+  },
+  "width": {
+    "min": 200,
+    "p05": 446,
+    "median": 1080,
+    "p95": 3000,
+    "max": 5568
+  },
+  "height": {
+    "min": 200,
+    "p05": 377,
+    "median": 1024,
+    "p95": 3000,
+    "max": 4217
+  },
+  "short_side": {
+    "min": 200,
+    "p05": 360,
+    "median": 1000,
+    "p95": 2939,
+    "max": 4000
+  },
+  "images_with_short_side_below_224": 3,
+  "non_image_files": [],
+  "corrupted_count": 0,
+  "corrupted": [],
+  "exact_duplicate_groups": [],
+  "exact_duplicate_extra_copies": 0,
+  "near_duplicate_threshold_bits": 6,
+  "near_duplicate_groups": [
+    [
+      "Smokey_Quartz/000003.jpg",
+      "Smokey_Quartz/000043.jpg"
+    ],
+    [
+      "Smokey_Quartz/000014.jpg",
+      "Smokey_Quartz/000031.jpg"
+    ],
+    [
+      "Smokey_Quartz/000015.jpg",
+      "Smokey_Quartz/000018.jpg"
+    ],
+    [
+      "Smokey_Quartz/000022.jpg",
+      "Smokey_Quartz/000046.jpg"
+    ],
+    [
+      "Smokey_Quartz/000029.jpg",
+      "Smokey_Quartz/000042.jpg"
+    ]
+  ],
+  "near_duplicate_group_count": 5,
+  "images_in_near_duplicate_groups": 10,
+  "cross_class_duplicate_groups": [],
+  "unique_groups": 956
+}

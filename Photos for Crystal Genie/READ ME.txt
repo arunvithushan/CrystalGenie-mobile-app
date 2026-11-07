@@ -1,0 +1,8 @@
+Put gemstone photos here (JPG, PNG or WEBP).
+
+While Crystal Genie is running (START_APP.cmd), every photo you put in this folder is copied
+to the emulator within a few seconds. In the app tap Upload (or the gallery button on the
+scan screen) and open the album "FromPC" - your photos are there.
+
+You can also double-click CrystalGenie\tools\windows\SEND_PHOTOS_TO_APP.cmd to copy them right away.
+Sub-folders are included. Removing a photo here does not remove it from the emulator.

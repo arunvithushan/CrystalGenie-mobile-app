@@ -1,0 +1,157 @@
+==== diag Mon 10/19/2026 10:14:46.96 
+
+Microsoft Windows [Version 10.0.26200.9457]
+dp0=C:\Users\ASUS\Desktop\arun\CrystalGenie\tools\windows\ 
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+INFO: Could not find files for the given pattern(s).
+C:\Windows\py.exe
+C:\Users\ASUS\AppData\Local\Programs\Python\Python310\python.exe
+C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps\python.exe
+C:\flutter\bin\flutter
+C:\flutter\bin\flutter.bat
+---- powershell hello 
+hello
+5.1.26100.9444
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy       Undefined
+      Process       Undefined
+  CurrentUser    RemoteSigned
+ LocalMachine       Undefined
+
+
+
+powershell exit 0 
+---- cg.ps1 check via -File 
+>> py -0p   (in C:\Users\ASUS\Desktop\arun\CrystalGenie)
+
+Installed Pythons found by C:\WINDOWS\py.exe Launcher for Windows *
+System.Management.Automation.RemoteException
+ -3.10-64       C:\Users\ASUS\AppData\Local\Programs\Python\Python310\python.exe
+<< exit code 0
+>> cmd /c where python & where flutter & where dart & where java & where adb & where psql & where git   (in C:\Users\ASUS\Desktop\arun\CrystalGenie)
+C:\Users\ASUS\AppData\Local\Programs\Python\Python310\python.exe
+C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps\python.exe
+C:\flutter\bin\flutter
+C:\flutter\bin\flutter.bat
+C:\flutter\bin\dart
+C:\flutter\bin\dart.bat
+INFO: Could not find files for the given pattern(s).
+INFO: Could not find files for the given pattern(s).
+INFO: Could not find files for the given pattern(s).
+D:\Git\cmd\git.exe
+<< exit code 0
+>> cmd /c flutter --version   (in C:\Users\ASUS\Desktop\arun\CrystalGenie)
+
+┌─────────────────────────────────────────────────────────┐
+│ A new version of Flutter is available!                  │
+│                                                         │
+│ To update to the latest version, run "flutter upgrade". │
+└─────────────────────────────────────────────────────────┘
+Flutter 3.47.5 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 6a19cca564 (4 weeks ago) • 2026-09-17 14:13:22 -0400
+Engine • hash ab598368592da0064197e2bc15c7f5b0a2c6bb1f (revision af7e796e16) (1 months ago) • 2026-09-16 18:35:09.000Z
+Tools • Dart 3.13.4 • DevTools 2.60.0
+<< exit code 0
+>> cmd /c java -version   (in C:\Users\ASUS\Desktop\arun\CrystalGenie)
+'java' is not recognized as an internal or external command,
+operable program or batch file.
+<< exit code 1
+>> nvidia-smi    (in C:\Users\ASUS\Desktop\arun\CrystalGenie)
+Mon Oct 19 10:14:52 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 591.59                 Driver Version: 591.59         CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3050 ...  WDDM  |   00000000:01:00.0  On |                  N/A |
+| N/A   62C    P0             23W /   80W |     597MiB /   4096MiB |     37%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            3140    C+G   ..._cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A            7140    C+G   ....0.4258.62\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A            7984    C+G   ...S\Virtual Pet\Virtual Pet.exe      N/A      |
+|    0   N/A  N/A            9000    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           11164    C+G   ....0.4258.62\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           12364    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
+|    0   N/A  N/A           14552    C+G   ...yb3d8bbwe\WindowsTerminal.exe      N/A      |
+|    0   N/A  N/A           16096    C+G   ..._pzs8sxrjxfjjc\app\claude.exe      N/A      |
+|    0   N/A  N/A           16716    C+G   ...5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A           18132    C+G   ...indows\System32\ShellHost.exe      N/A      |
+|    0   N/A  N/A           19552    C+G   ...mba6cd70vzyy\ArmouryCrate.exe      N/A      |
+|    0   N/A  N/A           20200    C+G   ....0.4258.62\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           20836    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A           20988    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A           21828    C+G   ...App_cw5n1h2txyewy\LockApp.exe      N/A      |
+|    0   N/A  N/A           22980    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           23104    C+G   ...4__8wekyb3d8bbwe\ms-teams.exe      N/A      |
+|    0   N/A  N/A           23928    C+G   ....0.4258.62\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           25172    C+G   ...2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A           27448    C+G   ...8wekyb3d8bbwe\M365Copilot.exe      N/A      |
+|    0   N/A  N/A           27536    C+G   ..._pzs8sxrjxfjjc\app\claude.exe      N/A      |
+|    0   N/A  N/A           27624    C+G   ...ce\Aura Wallpaper Service.exe      N/A      |
+|    0   N/A  N/A           28292    C+G   ....0.4258.62\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           28592    C+G   ...1g1gvanyjgm\WhatsApp.Root.exe      N/A      |
++-----------------------------------------------------------------------------------------+
+<< exit code 0
+ANDROID_HOME=  LOCALAPPDATA SDK exists: True
+PostgreSQL folders: 
+service PostgreSQL_For_Odoo: Running
+Flutter SDK found at C:\flutter
+net https://pypi.org/simple/pip/ -> 200
+net https://pub.dev/api/packages/dio -> 200
+net https://storage.googleapis.com/ -> FAILED The remote server returned an error: (400) Bad Request.
+>> cmd /c flutter doctor -v   (in C:\Users\ASUS\Desktop\arun\CrystalGenie)
+[√] Flutter (Channel stable, 3.47.5, on Microsoft Windows [Version 10.0.26200.9457], locale en-US) [530ms]
+    • Flutter version 3.47.5 on channel stable at C:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 6a19cca564 (4 weeks ago), 2026-09-17 14:13:22 -0400
+    • Engine revision af7e796e16
+    • Dart version 3.13.4
+    • DevTools version 2.60.0
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, enable-record-use, enable-swift-package-manager, omit-legacy-version-file, enable-lldb-debugging, enable-uiscene-migration
+
+[√] Windows Version (Windows 11 or higher, 25H2, 2009) [1,005ms]
+
+[!] Android toolchain - develop for Android devices (Android SDK version 36.1.0) [633ms]
+    • Android SDK at C:\Users\ASUS\AppData\Local\Android\sdk
+    • Emulator version 36.3.10.0 (build_id 14472402) (CL:N/A)
+    X cmdline-tools component is missing.
+      Try installing or updating Android Studio.
+      Alternatively, download the tools from https://developer.android.com/studio#command-line-tools-only and make sure to set the ANDROID_HOME environment variable.
+      See https://developer.android.com/studio/command-line for more details.
+    X Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/to/windows-android-setup for more details.
+
+[√] Chrome - develop for the web [252ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[!] Visual Studio - develop Windows apps (Visual Studio Build Tools 2022 17.14.20) [251ms]
+    • Visual Studio at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools
+    • Visual Studio Build Tools 2022 version 17.14.36705.20
+    X The current Visual Studio installation is incomplete.
+      Please use Visual Studio Installer to complete the installation or reinstall Visual Studio.
+
+[√] Connected device (3 available) [2.3s]
+    • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.26200.9457]
+    • Chrome (web)      • chrome  • web-javascript • Google Chrome 155.0.8059.82
+    • Edge (web)        • edge    • web-javascript • Microsoft Edge 154.0.4258.62
+
+[√] Network resources [1,206ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 2 categories.
+<< exit code 0
+cg exit 0 
+DONE 

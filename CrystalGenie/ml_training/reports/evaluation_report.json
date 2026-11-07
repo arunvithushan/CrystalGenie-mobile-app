@@ -1,0 +1,1047 @@
+{
+  "model": "gemstone_model.keras",
+  "class_names": [
+    "Garnet",
+    "Goldstone",
+    "Hematite",
+    "Herkimer_Diamond",
+    "Lapis_Lazuli",
+    "Libyan_Desert_Glass",
+    "Obsidian",
+    "Red_Beryl",
+    "Red_Jasper",
+    "Rose_Quartz",
+    "Shungite",
+    "Smokey_Quartz",
+    "Tigers_Eye"
+  ],
+  "ood_guard": {
+    "method": "cosine similarity of the pooled EfficientNet embedding to the nearest class centroid",
+    "similarity_threshold": 0.20486697316169739,
+    "percentile_of_validation": 2.0,
+    "test_in_distribution_rejected": 0.034482758620689655
+  },
+  "calibration": {
+    "method": "temperature scaling on validation split",
+    "temperature": 0.69813734915281,
+    "confidence_threshold": 0.54,
+    "target_accuracy_on_accepted": 0.9,
+    "threshold_curve_validation": [
+      {
+        "threshold": 0.3,
+        "coverage": 1.0,
+        "accuracy": 0.8413793103448276
+      },
+      {
+        "threshold": 0.31,
+        "coverage": 1.0,
+        "accuracy": 0.8413793103448276
+      },
+      {
+        "threshold": 0.32,
+        "coverage": 1.0,
+        "accuracy": 0.8413793103448276
+      },
+      {
+        "threshold": 0.33,
+        "coverage": 1.0,
+        "accuracy": 0.8413793103448276
+      },
+      {
+        "threshold": 0.34,
+        "coverage": 0.993103448275862,
+        "accuracy": 0.8472222222222222
+      },
+      {
+        "threshold": 0.35,
+        "coverage": 0.993103448275862,
+        "accuracy": 0.8472222222222222
+      },
+      {
+        "threshold": 0.36,
+        "coverage": 0.993103448275862,
+        "accuracy": 0.8472222222222222
+      },
+      {
+        "threshold": 0.37,
+        "coverage": 0.9862068965517241,
+        "accuracy": 0.8531468531468531
+      },
+      {
+        "threshold": 0.38,
+        "coverage": 0.9793103448275862,
+        "accuracy": 0.852112676056338
+      },
+      {
+        "threshold": 0.39,
+        "coverage": 0.9724137931034482,
+        "accuracy": 0.8581560283687943
+      },
+      {
+        "threshold": 0.4,
+        "coverage": 0.9724137931034482,
+        "accuracy": 0.8581560283687943
+      },
+      {
+        "threshold": 0.41,
+        "coverage": 0.9724137931034482,
+        "accuracy": 0.8581560283687943
+      },
+      {
+        "threshold": 0.42,
+        "coverage": 0.9724137931034482,
+        "accuracy": 0.8581560283687943
+      },
+      {
+        "threshold": 0.43,
+        "coverage": 0.9724137931034482,
+        "accuracy": 0.8581560283687943
+      },
+      {
+        "threshold": 0.44,
+        "coverage": 0.9655172413793104,
+        "accuracy": 0.8571428571428571
+      },
+      {
+        "threshold": 0.45,
+        "coverage": 0.9586206896551724,
+        "accuracy": 0.8633093525179856
+      },
+      {
+        "threshold": 0.46,
+        "coverage": 0.9586206896551724,
+        "accuracy": 0.8633093525179856
+      },
+      {
+        "threshold": 0.47,
+        "coverage": 0.9586206896551724,
+        "accuracy": 0.8633093525179856
+      },
+      {
+        "threshold": 0.48,
+        "coverage": 0.9448275862068966,
+        "accuracy": 0.8759124087591241
+      },
+      {
+        "threshold": 0.49,
+        "coverage": 0.9379310344827586,
+        "accuracy": 0.875
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.9310344827586207,
+        "accuracy": 0.8814814814814815
+      },
+      {
+        "threshold": 0.51,
+        "coverage": 0.9310344827586207,
+        "accuracy": 0.8814814814814815
+      },
+      {
+        "threshold": 0.52,
+        "coverage": 0.9310344827586207,
+        "accuracy": 0.8814814814814815
+      },
+      {
+        "threshold": 0.53,
+        "coverage": 0.9241379310344827,
+        "accuracy": 0.8880597014925373
+      },
+      {
+        "threshold": 0.54,
+        "coverage": 0.903448275862069,
+        "accuracy": 0.9007633587786259
+      },
+      {
+        "threshold": 0.55,
+        "coverage": 0.8827586206896552,
+        "accuracy": 0.9140625
+      },
+      {
+        "threshold": 0.56,
+        "coverage": 0.8827586206896552,
+        "accuracy": 0.9140625
+      },
+      {
+        "threshold": 0.57,
+        "coverage": 0.8758620689655172,
+        "accuracy": 0.9133858267716536
+      },
+      {
+        "threshold": 0.58,
+        "coverage": 0.8620689655172413,
+        "accuracy": 0.928
+      },
+      {
+        "threshold": 0.59,
+        "coverage": 0.8620689655172413,
+        "accuracy": 0.928
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.8620689655172413,
+        "accuracy": 0.928
+      },
+      {
+        "threshold": 0.61,
+        "coverage": 0.8620689655172413,
+        "accuracy": 0.928
+      },
+      {
+        "threshold": 0.62,
+        "coverage": 0.8482758620689655,
+        "accuracy": 0.9349593495934959
+      },
+      {
+        "threshold": 0.63,
+        "coverage": 0.8344827586206897,
+        "accuracy": 0.9421487603305785
+      },
+      {
+        "threshold": 0.64,
+        "coverage": 0.8275862068965517,
+        "accuracy": 0.9416666666666667
+      },
+      {
+        "threshold": 0.65,
+        "coverage": 0.8137931034482758,
+        "accuracy": 0.9576271186440678
+      },
+      {
+        "threshold": 0.66,
+        "coverage": 0.8068965517241379,
+        "accuracy": 0.9572649572649573
+      },
+      {
+        "threshold": 0.67,
+        "coverage": 0.8,
+        "accuracy": 0.9655172413793104
+      },
+      {
+        "threshold": 0.68,
+        "coverage": 0.7862068965517242,
+        "accuracy": 0.9649122807017544
+      },
+      {
+        "threshold": 0.69,
+        "coverage": 0.7862068965517242,
+        "accuracy": 0.9649122807017544
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.7793103448275862,
+        "accuracy": 0.9646017699115044
+      },
+      {
+        "threshold": 0.71,
+        "coverage": 0.7793103448275862,
+        "accuracy": 0.9646017699115044
+      },
+      {
+        "threshold": 0.72,
+        "coverage": 0.7793103448275862,
+        "accuracy": 0.9646017699115044
+      },
+      {
+        "threshold": 0.73,
+        "coverage": 0.7724137931034483,
+        "accuracy": 0.9642857142857143
+      },
+      {
+        "threshold": 0.74,
+        "coverage": 0.7724137931034483,
+        "accuracy": 0.9642857142857143
+      },
+      {
+        "threshold": 0.75,
+        "coverage": 0.7655172413793103,
+        "accuracy": 0.963963963963964
+      },
+      {
+        "threshold": 0.76,
+        "coverage": 0.7655172413793103,
+        "accuracy": 0.963963963963964
+      },
+      {
+        "threshold": 0.77,
+        "coverage": 0.7655172413793103,
+        "accuracy": 0.963963963963964
+      },
+      {
+        "threshold": 0.78,
+        "coverage": 0.7586206896551724,
+        "accuracy": 0.9636363636363636
+      },
+      {
+        "threshold": 0.79,
+        "coverage": 0.7517241379310344,
+        "accuracy": 0.963302752293578
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.7517241379310344,
+        "accuracy": 0.963302752293578
+      },
+      {
+        "threshold": 0.81,
+        "coverage": 0.7448275862068966,
+        "accuracy": 0.9629629629629629
+      },
+      {
+        "threshold": 0.82,
+        "coverage": 0.7310344827586207,
+        "accuracy": 0.9622641509433962
+      },
+      {
+        "threshold": 0.83,
+        "coverage": 0.7034482758620689,
+        "accuracy": 0.9607843137254902
+      },
+      {
+        "threshold": 0.84,
+        "coverage": 0.6896551724137931,
+        "accuracy": 0.96
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.6758620689655173,
+        "accuracy": 0.9693877551020408
+      },
+      {
+        "threshold": 0.86,
+        "coverage": 0.6758620689655173,
+        "accuracy": 0.9693877551020408
+      },
+      {
+        "threshold": 0.87,
+        "coverage": 0.6758620689655173,
+        "accuracy": 0.9693877551020408
+      },
+      {
+        "threshold": 0.88,
+        "coverage": 0.6689655172413793,
+        "accuracy": 0.9690721649484536
+      },
+      {
+        "threshold": 0.89,
+        "coverage": 0.6482758620689655,
+        "accuracy": 0.9787234042553191
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.6413793103448275,
+        "accuracy": 0.978494623655914
+      },
+      {
+        "threshold": 0.91,
+        "coverage": 0.6344827586206897,
+        "accuracy": 0.9891304347826086
+      },
+      {
+        "threshold": 0.92,
+        "coverage": 0.6068965517241379,
+        "accuracy": 1.0
+      },
+      {
+        "threshold": 0.93,
+        "coverage": 0.6,
+        "accuracy": 1.0
+      },
+      {
+        "threshold": 0.94,
+        "coverage": 0.5655172413793104,
+        "accuracy": 1.0
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.5379310344827586,
+        "accuracy": 1.0
+      },
+      {
+        "threshold": 0.96,
+        "coverage": 0.5172413793103449,
+        "accuracy": 1.0
+      },
+      {
+        "threshold": 0.97,
+        "coverage": 0.47586206896551725,
+        "accuracy": 1.0
+      },
+      {
+        "threshold": 0.98,
+        "coverage": 0.4482758620689655,
+        "accuracy": 1.0
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.31724137931034485,
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "train": {
+    "n": 671,
+    "accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "f1_weighted": 1.0,
+    "nll_raw": 0.04098600644059768,
+    "nll_calibrated": 0.005570046718353874,
+    "ece_raw": 0.039782555288067505,
+    "ece_calibrated": 0.005530419279419441,
+    "selective": {
+      "threshold": 0.54,
+      "coverage": 1.0,
+      "accuracy_on_accepted": 1.0,
+      "uncertain_fraction": 0.0
+    },
+    "selective_with_ood_guard": {
+      "coverage": 0.9865871833084948,
+      "accuracy_on_accepted": 1.0,
+      "rejected_by_similarity": 0.013412816691505217
+    }
+  },
+  "validation": {
+    "n": 145,
+    "accuracy": 0.8413793103448276,
+    "top3_accuracy": 0.9655172413793104,
+    "precision_macro": 0.8451817413355874,
+    "recall_macro": 0.831405773713466,
+    "f1_macro": 0.8286840332114053,
+    "f1_weighted": 0.8426890059886193,
+    "nll_raw": 0.4842270112062338,
+    "nll_calibrated": 0.4340279946944854,
+    "ece_raw": 0.07552645124238111,
+    "ece_calibrated": 0.04166007862519771,
+    "selective": {
+      "threshold": 0.54,
+      "coverage": 0.903448275862069,
+      "accuracy_on_accepted": 0.9007633587786259,
+      "uncertain_fraction": 0.096551724137931
+    },
+    "selective_with_ood_guard": {
+      "coverage": 0.8827586206896552,
+      "accuracy_on_accepted": 0.90625,
+      "rejected_by_similarity": 0.020689655172413793
+    }
+  },
+  "test": {
+    "n": 145,
+    "accuracy": 0.8689655172413793,
+    "top3_accuracy": 0.9655172413793104,
+    "precision_macro": 0.8881887343425804,
+    "recall_macro": 0.8575398960014345,
+    "f1_macro": 0.8648654115350121,
+    "f1_weighted": 0.8682693251407841,
+    "per_class": {
+      "Garnet": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.8,
+        "support": 6.0
+      },
+      "Goldstone": {
+        "precision": 1.0,
+        "recall": 0.7272727272727273,
+        "f1-score": 0.8421052631578947,
+        "support": 11.0
+      },
+      "Hematite": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.7692307692307693,
+        "support": 12.0
+      },
+      "Herkimer_Diamond": {
+        "precision": 0.9230769230769231,
+        "recall": 1.0,
+        "f1-score": 0.96,
+        "support": 12.0
+      },
+      "Lapis_Lazuli": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1-score": 0.9230769230769231,
+        "support": 12.0
+      },
+      "Libyan_Desert_Glass": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 12.0
+      },
+      "Obsidian": {
+        "precision": 0.75,
+        "recall": 0.8181818181818182,
+        "f1-score": 0.782608695652174,
+        "support": 11.0
+      },
+      "Red_Beryl": {
+        "precision": 0.7857142857142857,
+        "recall": 0.9166666666666666,
+        "f1-score": 0.8461538461538461,
+        "support": 12.0
+      },
+      "Red_Jasper": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1-score": 0.9230769230769231,
+        "support": 12.0
+      },
+      "Rose_Quartz": {
+        "precision": 0.9090909090909091,
+        "recall": 0.7692307692307693,
+        "f1-score": 0.8333333333333334,
+        "support": 13.0
+      },
+      "Shungite": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1-score": 0.75,
+        "support": 12.0
+      },
+      "Smokey_Quartz": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1-score": 0.8571428571428571,
+        "support": 8.0
+      },
+      "Tigers_Eye": {
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1-score": 0.9565217391304348,
+        "support": 12.0
+      },
+      "accuracy": 0.8689655172413793,
+      "macro avg": {
+        "precision": 0.8881887343425804,
+        "recall": 0.8575398960014345,
+        "f1-score": 0.8648654115350121,
+        "support": 145.0
+      },
+      "weighted avg": {
+        "precision": 0.8808036790795412,
+        "recall": 0.8689655172413793,
+        "f1-score": 0.8682693251407841,
+        "support": 145.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11
+      ]
+    ],
+    "nll_raw": 0.49773362019311407,
+    "nll_calibrated": 0.4557901403533069,
+    "ece_raw": 0.09438531902329673,
+    "ece_calibrated": 0.013207366502374737,
+    "selective": {
+      "threshold": 0.54,
+      "coverage": 0.903448275862069,
+      "accuracy_on_accepted": 0.9083969465648855,
+      "uncertain_fraction": 0.096551724137931
+    },
+    "selective_with_ood_guard": {
+      "coverage": 0.8896551724137931,
+      "accuracy_on_accepted": 0.9069767441860465,
+      "rejected_by_similarity": 0.034482758620689655
+    }
+  },
+  "out_of_distribution": {
+    "n": 31,
+    "flagged_uncertain": 28,
+    "flagged_fraction": 0.9032258064516129,
+    "mean_confidence": 0.5640930697796321,
+    "images": [
+      {
+        "image": "skimage:astronaut",
+        "top1": "Obsidian",
+        "confidence": 0.8873316268366057,
+        "similarity": 0.2796574831008911,
+        "low_confidence": false,
+        "unlike_training_data": false,
+        "flagged_uncertain": false
+      },
+      {
+        "image": "skimage:coffee",
+        "top1": "Red_Jasper",
+        "confidence": 0.48713851569297417,
+        "similarity": 0.14801496267318726,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:chelsea",
+        "top1": "Tigers_Eye",
+        "confidence": 0.254865499580804,
+        "similarity": 0.07256902754306793,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:rocket",
+        "top1": "Hematite",
+        "confidence": 0.4683234707284242,
+        "similarity": 0.07075928896665573,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:camera",
+        "top1": "Libyan_Desert_Glass",
+        "confidence": 0.46642694486772146,
+        "similarity": 0.13346703350543976,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:hubble_deep_field",
+        "top1": "Obsidian",
+        "confidence": 0.759185624702167,
+        "similarity": 0.11537766456604004,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:immunohistochemistry",
+        "top1": "Rose_Quartz",
+        "confidence": 0.597611044684632,
+        "similarity": 0.2505510151386261,
+        "low_confidence": false,
+        "unlike_training_data": false,
+        "flagged_uncertain": false
+      },
+      {
+        "image": "skimage:coins",
+        "top1": "Herkimer_Diamond",
+        "confidence": 0.7087248681147262,
+        "similarity": 0.2457914650440216,
+        "low_confidence": false,
+        "unlike_training_data": false,
+        "flagged_uncertain": false
+      },
+      {
+        "image": "skimage:moon",
+        "top1": "Shungite",
+        "confidence": 0.5116608887636298,
+        "similarity": 0.1001502275466919,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:page",
+        "top1": "Shungite",
+        "confidence": 0.8576166577479349,
+        "similarity": 0.0863053947687149,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:text",
+        "top1": "Shungite",
+        "confidence": 0.7981695077610484,
+        "similarity": 0.05398017540574074,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:brick",
+        "top1": "Obsidian",
+        "confidence": 0.3129673415306798,
+        "similarity": 0.05107821524143219,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:grass",
+        "top1": "Rose_Quartz",
+        "confidence": 0.49502210940329344,
+        "similarity": -0.009553130716085434,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "skimage:gravel",
+        "top1": "Hematite",
+        "confidence": 0.25240537027148313,
+        "similarity": 0.14109379053115845,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:uniform_noise",
+        "top1": "Hematite",
+        "confidence": 0.9640141884003426,
+        "similarity": 0.1555604636669159,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:gaussian_noise",
+        "top1": "Hematite",
+        "confidence": 0.9398439463071604,
+        "similarity": 0.13636347651481628,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:solid_white",
+        "top1": "Rose_Quartz",
+        "confidence": 0.5868452274259511,
+        "similarity": 0.04271915927529335,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:solid_black",
+        "top1": "Rose_Quartz",
+        "confidence": 0.36347167762276744,
+        "similarity": 0.014300292357802391,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:solid_grey",
+        "top1": "Garnet",
+        "confidence": 0.1320948636932874,
+        "similarity": 0.09871050715446472,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:solid_red",
+        "top1": "Rose_Quartz",
+        "confidence": 0.8368343195287486,
+        "similarity": 0.11938932538032532,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:solid_green",
+        "top1": "Rose_Quartz",
+        "confidence": 0.43393963496982857,
+        "similarity": 0.0552913174033165,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:solid_blue",
+        "top1": "Lapis_Lazuli",
+        "confidence": 0.3883862316217277,
+        "similarity": 0.12628255784511566,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:solid_skin",
+        "top1": "Rose_Quartz",
+        "confidence": 0.9769035025726043,
+        "similarity": 0.12758256494998932,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:gradient",
+        "top1": "Rose_Quartz",
+        "confidence": 0.7029280365885892,
+        "similarity": 0.05846768617630005,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:checkerboard",
+        "top1": "Obsidian",
+        "confidence": 0.34769718801423655,
+        "similarity": 0.0700606182217598,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:shapes_0",
+        "top1": "Lapis_Lazuli",
+        "confidence": 0.36991858060581234,
+        "similarity": 0.11439967900514603,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:shapes_1",
+        "top1": "Rose_Quartz",
+        "confidence": 0.5525958382993948,
+        "similarity": 0.0667942464351654,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:shapes_2",
+        "top1": "Lapis_Lazuli",
+        "confidence": 0.36132276364726573,
+        "similarity": 0.11062444001436234,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "synthetic:text_like_stripes",
+        "top1": "Rose_Quartz",
+        "confidence": 0.43987105793254544,
+        "similarity": 0.03964753448963165,
+        "low_confidence": true,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "asset:profile.png",
+        "top1": "Smokey_Quartz",
+        "confidence": 0.5951592340930653,
+        "similarity": 0.12662500143051147,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      },
+      {
+        "image": "asset:bg.png",
+        "top1": "Garnet",
+        "confidence": 0.6376094011591473,
+        "similarity": 0.19401121139526367,
+        "low_confidence": false,
+        "unlike_training_data": true,
+        "flagged_uncertain": true
+      }
+    ],
+    "flagged_by_confidence_only": 16,
+    "flagged_by_similarity": 28,
+    "note": "A closed-set classifier always picks one of the known classes. Two guards are used: the calibrated confidence threshold and a feature-similarity check against the class centroids. Images that resemble gemstones (colourful, glossy objects) can still pass both."
+  },
+  "latency": {
+    "batch_size": 1,
+    "runs": 30,
+    "mean_ms": 376.9872333427581,
+    "p50_ms": 362.5686499872245,
+    "p95_ms": 495.86609000689344,
+    "device": "CPU"
+  },
+  "notes": [
+    "Test split is held out and grouped by near-duplicate hash (no specimen leakage).",
+    "Training accuracy is measured without augmentation.",
+    "Dataset labels are web-scraped and contain some noise (infographics, a few likely mislabelled photos)."
+  ]
+}

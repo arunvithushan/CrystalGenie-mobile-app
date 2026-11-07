@@ -1,0 +1,60 @@
+# ---- secrets
+.env
+*.env
+!.env.example
+mobile/android/key.properties
+*.jks
+*.keystore
+
+# ---- datasets, user images, generated data (never commit)
+ml_training/data/
+ml_training/checkpoints/
+ml_training/reports/image_hashes.csv
+backend/var/
+*.zip
+
+# ---- trained models (large; share via release assets / cloud storage instead)
+models/*.keras
+models/*.h5
+models/*.tflite
+models/*.onnx
+
+# ---- python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- flutter / dart
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/build/
+mobile/.packages
+mobile/pubspec.lock.bak
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/.cxx/
+mobile/android/gradlew
+mobile/android/gradlew.bat
+mobile/android/gradle/wrapper/gradle-wrapper.jar
+mobile/ios/
+*.iml
+.idea/
+
+# ---- OS / editors
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+
+# held-out test photos copied for the emulator gallery (dataset images stay out of git)
+tools/windows/sample_photos/
+
+# local run logs, emulator screenshots and the local dev test account
+tools/windows/logs/
+tools/windows/adb_script.txt

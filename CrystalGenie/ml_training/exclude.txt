@@ -1,0 +1,4 @@
+# Optional quarantine list for preprocess.py.
+# One dataset-relative path per line (e.g. Rose_Quartz/000123.jpg). Lines starting with # are ignored.
+# Listed images are skipped during preprocessing/training; the original files are NOT touched.
+# Use this for infographics, text banners, or photos you confirm are mislabelled.

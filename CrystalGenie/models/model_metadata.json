@@ -1,0 +1,191 @@
+{
+  "model_version": "cg-effv2b0-20261014-1036",
+  "architecture": "EfficientNetV2B0 (ImageNet pretrained) + GAP + Dropout + Dense softmax",
+  "input_size": [
+    224,
+    224,
+    3
+  ],
+  "input_range": "RGB float32 0..255 (normalisation is inside the model)",
+  "preprocessing": [
+    "EXIF transpose, RGB (alpha composited on white)",
+    "downscale short side to <= 512 px (Lanczos)",
+    "centre square crop, resize to 224x224 (bilinear, antialias)"
+  ],
+  "class_names": [
+    "Garnet",
+    "Goldstone",
+    "Hematite",
+    "Herkimer_Diamond",
+    "Lapis_Lazuli",
+    "Libyan_Desert_Glass",
+    "Obsidian",
+    "Red_Beryl",
+    "Red_Jasper",
+    "Rose_Quartz",
+    "Shungite",
+    "Smokey_Quartz",
+    "Tigers_Eye"
+  ],
+  "num_classes": 13,
+  "trained_at": "2026-10-14T10:36:28.901227+00:00",
+  "framework": {
+    "tensorflow": "2.17.1",
+    "keras": "3.12.4",
+    "python": "3.10.0"
+  },
+  "hardware": {
+    "gpu": false,
+    "mixed_precision": false,
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "hyperparameters": {
+    "processed": "C:\\Users\\ASUS\\Desktop\\arun\\CrystalGenie\\ml_training\\data\\processed",
+    "splits": "C:\\Users\\ASUS\\Desktop\\arun\\CrystalGenie\\ml_training\\data\\splits",
+    "batch_size": 16,
+    "epochs1": 25,
+    "epochs2": 30,
+    "epochs3": 12,
+    "lr1": 0.001,
+    "lr2": 0.0001,
+    "lr3": 1.5e-05,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.05,
+    "dropout": 0.35,
+    "unfreeze_from": "block5",
+    "no_phase3": false,
+    "max_gap": 0.15,
+    "mixed_precision": "auto",
+    "no_class_weights": false,
+    "skip_eval": false
+  },
+  "class_weights": {
+    "0": 1.8434065934065933,
+    "1": 1.053375196232339,
+    "2": 0.9384615384615385,
+    "3": 0.9217032967032966,
+    "4": 0.9217032967032966,
+    "5": 0.8748370273794003,
+    "6": 0.9738751814223512,
+    "7": 0.9558404558404558,
+    "8": 0.9558404558404558,
+    "9": 0.8748370273794003,
+    "10": 0.9558404558404558,
+    "11": 1.4337606837606838,
+    "12": 0.889920424403183
+  },
+  "dataset": {
+    "totals": {
+      "train": 671,
+      "val": 145,
+      "test": 145
+    },
+    "counts": {
+      "train": {
+        "Garnet": 28,
+        "Goldstone": 49,
+        "Hematite": 55,
+        "Herkimer_Diamond": 56,
+        "Lapis_Lazuli": 56,
+        "Libyan_Desert_Glass": 59,
+        "Obsidian": 53,
+        "Red_Beryl": 54,
+        "Red_Jasper": 54,
+        "Rose_Quartz": 59,
+        "Shungite": 54,
+        "Smokey_Quartz": 36,
+        "Tigers_Eye": 58
+      },
+      "val": {
+        "Garnet": 6,
+        "Goldstone": 11,
+        "Hematite": 12,
+        "Herkimer_Diamond": 12,
+        "Lapis_Lazuli": 12,
+        "Libyan_Desert_Glass": 12,
+        "Obsidian": 11,
+        "Red_Beryl": 12,
+        "Red_Jasper": 12,
+        "Rose_Quartz": 13,
+        "Shungite": 12,
+        "Smokey_Quartz": 8,
+        "Tigers_Eye": 12
+      },
+      "test": {
+        "Garnet": 6,
+        "Goldstone": 11,
+        "Hematite": 12,
+        "Herkimer_Diamond": 12,
+        "Lapis_Lazuli": 12,
+        "Libyan_Desert_Glass": 12,
+        "Obsidian": 11,
+        "Red_Beryl": 12,
+        "Red_Jasper": 12,
+        "Rose_Quartz": 13,
+        "Shungite": 12,
+        "Smokey_Quartz": 8,
+        "Tigers_Eye": 12
+      }
+    },
+    "skipped": 0
+  },
+  "phases": [
+    {
+      "name": "phase1",
+      "epochs_run": 25,
+      "best_epoch": 21,
+      "best_val_loss": 0.9001004099845886,
+      "best_val_accuracy": 0.8206896781921387,
+      "train_accuracy_at_best": 0.9210134148597717,
+      "seconds": 243.5,
+      "checkpoint": "C:\\Users\\ASUS\\Desktop\\arun\\CrystalGenie\\ml_training\\checkpoints\\phase1_best.keras"
+    },
+    {
+      "name": "phase2",
+      "epochs_run": 28,
+      "best_epoch": 22,
+      "best_val_loss": 0.706428050994873,
+      "best_val_accuracy": 0.8482758402824402,
+      "train_accuracy_at_best": 0.9985097050666809,
+      "seconds": 577.3,
+      "checkpoint": "C:\\Users\\ASUS\\Desktop\\arun\\CrystalGenie\\ml_training\\checkpoints\\phase2_best.keras"
+    }
+  ],
+  "phase3_decision": "skipped: phase-2 val-loss improvement=0.1937, train-val gap=0.150 (max 0.15)",
+  "selected_phase": "phase2",
+  "calibration": {
+    "temperature": 0.69813734915281,
+    "confidence_threshold": 0.54,
+    "method": "temperature scaling (validation NLL)",
+    "target_accuracy": 0.9
+  },
+  "metrics": {
+    "train_accuracy": 1.0,
+    "val_accuracy": 0.8413793103448276,
+    "test_accuracy": 0.8689655172413793,
+    "test_top3_accuracy": 0.9655172413793104,
+    "test_f1_macro": 0.8648654115350121,
+    "test_precision_macro": 0.8881887343425804,
+    "test_recall_macro": 0.8575398960014345,
+    "test_selective": {
+      "threshold": 0.54,
+      "coverage": 0.903448275862069,
+      "accuracy_on_accepted": 0.9083969465648855,
+      "uncertain_fraction": 0.096551724137931
+    },
+    "test_selective_with_ood_guard": {
+      "coverage": 0.8896551724137931,
+      "accuracy_on_accepted": 0.9069767441860465,
+      "rejected_by_similarity": 0.034482758620689655
+    },
+    "ood_flagged_fraction": 0.9032258064516129,
+    "latency_ms_mean": 376.9872333427581,
+    "test_samples": 145
+  },
+  "ood_guard": {
+    "method": "cosine similarity to nearest class centroid (avg_pool embedding)",
+    "centroids_file": "class_centroids.npy",
+    "similarity_threshold": 0.20486697316169739,
+    "embedding_layer": "avg_pool"
+  }
+}
